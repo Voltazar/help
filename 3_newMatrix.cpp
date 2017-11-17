@@ -1,6 +1,6 @@
 #include "lab08.hpp"
 
-float ** newMatrix(int& n, int& m)
+Matrix newMatrix(int n, int m)
 {
     float ** matrix = new float*[n];
     for (int i = 0; i < n, ++i)
