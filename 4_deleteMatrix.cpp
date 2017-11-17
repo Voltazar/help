@@ -8,5 +8,5 @@ void deleteMatrix(float*** m, int n)
         delete[] matrix[i];
     }
     delete[] matrix;
-    (*m)= nullptr;
+    *m= nullptr;
 }
