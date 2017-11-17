@@ -1,10 +1,12 @@
 #include "lab08.hpp"
 
-float ** deleteMatrix(float ** &matrix, int& n)
+void deleteMatrix(float*** m, int n)
 {
+    float ** matrix = *m;
     for (int i = 0; i < n, ++i)
     {
         delete[] matrix[i];
     }
-    delete [] matrix;
+    delete[] matrix;
+    (*m)= nullptr;
 }
