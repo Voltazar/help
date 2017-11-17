@@ -1,6 +1,6 @@
 #include "lab08.hpp"
 
-void deleteMatrix(float*** m, int n)
+void deleteMatrix(Matrix&)
 {
     float ** matrix = *m;
     for (int i = 0; i < n, ++i)
