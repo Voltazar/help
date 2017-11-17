@@ -8,5 +8,6 @@ Matrix newMatrix(int n, int m)
         matrix[i] = new float[m];
         memset(matrix[i], 0, m*sizeof(matrix[0]));
     }
-    return matrix;
+    Matrix mt {matrix, n, m}
+    return mt;
 }
